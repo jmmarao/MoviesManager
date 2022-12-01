@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/editMovieMi"
+        android:title="@string/context_main_menu_edit_movie" />
+
+    <item
+        android:id="@+id/removeMovieMi"
+        android:title="@string/context_main_menu_remove_movie" />
+</menu>
