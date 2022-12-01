@@ -7,4 +7,17 @@
     <string name="context_main_menu_remove_movie">Remove movie</string>
     <string name="tile_movie">Movie:</string>
     <string name="tile_score">Score:</string>
+    <string name="activity_movie_movie">Movie</string>
+    <string name="activity_movie_release_year">Release year</string>
+    <string name="activity_movie_producer">Producer</string>
+    <string name="activity_movie_duration">Duration</string>
+    <string name="activity_movie_score">Score</string>
+    <string name="activity_movie_save">Save</string>
+
+    <string-array name="genre">
+        <item>Adventure</item>
+        <item>Horror</item>
+        <item>Romance</item>
+        <item>Other</item>
+    </string-array>
 </resources>
