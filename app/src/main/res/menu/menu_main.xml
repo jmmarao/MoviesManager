@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addMovieMi"
+        android:icon="@drawable/ic_add"
+        android:title="@string/ic_add_movie"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/filterByNameMi"
+        android:icon="@drawable/ic_filter_by_name"
+        android:title="@string/ic_filter_by_name"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/filterByScoreMi"
+        android:icon="@drawable/ic_filter_by_score"
+        android:title="@string/ic_filter_by_score"
+        app:showAsAction="ifRoom" />
+</menu>
