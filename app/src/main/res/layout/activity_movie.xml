@@ -62,14 +62,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/durationEditText" />
 
-    <CheckBox
-        android:id="@+id/watchedCheckBox"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/watchedRadioGroupLinearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Watched"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genreSpinner" />
+        app:layout_constraintTop_toBottomOf="@+id/genreSpinner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="@string/activity_movie_watched" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/activity_movie_watched_yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/activity_movie_watched_no" />
+        </RadioGroup>
+    </LinearLayout>
 
     <EditText
         android:id="@+id/scoreEditText"
@@ -80,7 +108,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/watchedCheckBox" />
+        app:layout_constraintTop_toBottomOf="@+id/watchedRadioGroupLinearLayout" />
 
     <Button
         android:id="@+id/saveButton"

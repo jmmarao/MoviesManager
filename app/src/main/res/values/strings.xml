@@ -13,6 +13,9 @@
     <string name="activity_movie_duration">Duration</string>
     <string name="activity_movie_score">Score</string>
     <string name="activity_movie_save">Save</string>
+    <string name="activity_movie_watched">Watched:</string>
+    <string name="activity_movie_watched_yes">Yes</string>
+    <string name="activity_movie_watched_no">No</string>
 
     <string-array name="genre">
         <item>Adventure</item>
