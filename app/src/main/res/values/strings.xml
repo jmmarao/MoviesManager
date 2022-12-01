@@ -5,4 +5,6 @@
     <string name="ic_filter_by_score">Filter by score</string>
     <string name="context_main_menu_edit_movie">Edit movie</string>
     <string name="context_main_menu_remove_movie">Remove movie</string>
+    <string name="tile_movie">Movie:</string>
+    <string name="tile_score">Score:</string>
 </resources>
