@@ -78,19 +78,20 @@
             android:text="@string/activity_movie_watched" />
 
         <RadioGroup
+            android:id="@+id/radioGroupWatched"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radioButtonYes"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/activity_movie_watched_yes" />
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radioButtonNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
