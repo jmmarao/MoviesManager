@@ -19,6 +19,9 @@ interface MovieRoomDAO {
     @Query("SELECT * FROM $MOVIE_TABLE WHERE $ID_COLUMN = :id")
     fun retrieveMovie(id: Int): Movie?
 
+    @Query("SELECT * FROM $MOVIE_TABLE")
+    fun retrieveMovies(): MutableList<Movie>
+
     @Query("SELECT * FROM $MOVIE_TABLE ORDER BY $NAME_COLUMN")
     fun retrieveMoviesSortedByName(): MutableList<Movie>
 
