@@ -24,12 +24,47 @@ class MovieRoomController(private val mainActivity: MainActivity) {
         }.start()
     }
 
-    fun getContact(id: Int) = movieDAOImpl.retrieveMovie(id)
+    fun getMovie(id: Int) = movieDAOImpl.retrieveMovie(id)
+
     fun getMovies() {
         object : AsyncTask<Unit, Unit, MutableList<Movie>>() {
             override fun doInBackground(vararg params: Unit?): MutableList<Movie> {
                 val returnList = mutableListOf<Movie>()
                 returnList.addAll(movieDAOImpl.retrieveMovies())
+                return returnList
+            }
+
+            override fun onPostExecute(result: MutableList<Movie>?) {
+                super.onPostExecute(result)
+                if (result != null) {
+                    mainActivity.updateMovieList(result)
+                }
+            }
+        }.execute()
+    }
+
+    fun getMoviesSortedByName() {
+        object : AsyncTask<Unit, Unit, MutableList<Movie>>() {
+            override fun doInBackground(vararg params: Unit?): MutableList<Movie> {
+                val returnList = mutableListOf<Movie>()
+                returnList.addAll(movieDAOImpl.retrieveMoviesSortedByName())
+                return returnList
+            }
+
+            override fun onPostExecute(result: MutableList<Movie>?) {
+                super.onPostExecute(result)
+                if (result != null) {
+                    mainActivity.updateMovieList(result)
+                }
+            }
+        }.execute()
+    }
+
+    fun getMoviesSortedByScore() {
+        object : AsyncTask<Unit, Unit, MutableList<Movie>>() {
+            override fun doInBackground(vararg params: Unit?): MutableList<Movie> {
+                val returnList = mutableListOf<Movie>()
+                returnList.addAll(movieDAOImpl.retrieveMoviesSortedByScore())
                 return returnList
             }
 

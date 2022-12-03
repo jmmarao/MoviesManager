@@ -82,6 +82,14 @@ class MainActivity : AppCompatActivity() {
                 movieActivityResultLauncher.launch(Intent(this, MovieActivity::class.java))
                 true
             }
+            R.id.filterByNameMi -> {
+                movieController.getMoviesSortedByName()
+                true
+            }
+            R.id.filterByScoreMi -> {
+                movieController.getMoviesSortedByScore()
+                true
+            }
             else -> {
                 false
             }
