@@ -22,7 +22,6 @@
             android:id="@+id/movieTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:textSize="19sp" />
     </LinearLayout>
 
@@ -41,7 +40,6 @@
         <TextView
             android:id="@+id/scoreTextView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>
